@@ -33,8 +33,7 @@
                 <li><a href="?seccion=inicio">Inicio</a></li>
                 <li><a href="?seccion=pilotos">Pilotos</a></li>
                 <li><a href="?seccion=marcas">Marcas</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Encuesta</a></li>
+                <li><a href="?seccion=encuesta">Encuesta</a></li>
             </ul>
         </nav>
     
@@ -61,6 +60,10 @@
             }else if($_GET['seccion'] == 'marcas'){
 
                 require_once('modulos/marcas.php');
+                
+            }else if($_GET['seccion'] == 'encuesta'){
+
+                require_once('modulos/encuesta.php');
                 
             }else{
                 require_once('modulos/inicio.php');
